@@ -1,0 +1,14 @@
+import React from 'react'
+
+function Pagenetion({gotoNextPage , gotoPrevPage  }) {
+    return (
+        <div>
+            
+          {  gotoPrevPage &&  <button  onClick={ gotoPrevPage}> Prev  </button>}
+    {    gotoNextPage &&   <button onClick={gotoNextPage}>   Next</button>}
+            
+        </div>
+    )
+}
+
+export default Pagenetion
